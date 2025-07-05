@@ -48,7 +48,7 @@ A professional Power BI dashboard project that analyzes customer and transaction
 
 ## 📸 Screenshots
 
-![image ]("C:\Users\User\Pictures\Screenshots\Screenshot 2025-07-05 200026.png")
+![image alt]("C:\Users\User\Pictures\Screenshots\Screenshot 2025-07-05 200026.png")
 
 ---
 
