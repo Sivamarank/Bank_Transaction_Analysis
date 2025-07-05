@@ -48,14 +48,13 @@ A professional Power BI dashboard project that analyzes customer and transaction
 
 ## 📸 Screenshots
 
-| Overview | Top Customers Table | Slicers |
-|----------|----------------------|----------|
-| ![](screenshots/dashboard_overview.png) | ![](screenshots/top_customers_table.png) | ![](screenshots/slicers_dark_theme.png) |
+![image ]("C:\Users\User\Pictures\Screenshots\Screenshot 2025-07-05 200026.png")
 
 ---
 
 ## 📈 Sample Query (SQL)
 ```sql
+# Monthly Total Deposits and Withdrawals
 SELECT
   DATE_FORMAT(transaction_date, '%Y-%m') AS month,
   transaction_type,
@@ -63,3 +62,24 @@ SELECT
 FROM transactions
 GROUP BY month, transaction_type
 ORDER BY month;
+## Top 5 High-Value Customers
+SELECT
+  c.name,
+  c.city,
+  SUM(t.amount) AS total_transaction
+FROM transactions t
+JOIN accounts a ON t.account_id = a.account_id
+JOIN customers c ON a.customer_id = c.customer_id
+GROUP BY c.name, c.city
+ORDER BY total_transaction DESC
+LIMIT 5;
+## Branch-Wise Transaction Summary
+SELECT
+  a.branch_name,
+  t.transaction_type,
+  SUM(t.amount) AS total
+FROM transactions t
+JOIN accounts a ON t.account_id = a.account_id
+GROUP BY a.branch_name, t.transaction_type;
+
+
