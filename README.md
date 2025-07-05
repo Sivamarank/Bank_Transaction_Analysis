@@ -46,7 +46,7 @@ A professional Power BI dashboard project that analyzes customer and transaction
 
 ---
 
-## 📸 Screenshots
+## 📸 Snap
 
 ![image alt](https://github.com/Sivamarank/Bank_Transaction_Analysis/blob/5725c138cf1cb92f1a11e6fc07060adaf5083e12/Screenshot%202025-07-05%20200026.png)
 
