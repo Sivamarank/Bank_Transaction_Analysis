@@ -3,6 +3,25 @@
 A professional Power BI dashboard project that analyzes customer and transaction data for a fictional bank. This project uses data modeled in SQL and visualized in Power BI, with a modern dark theme and interactive slicers.
 
 ---
+## 📌 Project Info
+
+- **Author**: Maran  
+- **Date**: July 05, 2025  
+- **Tools Used**:
+  - 🐬 MySQL (Workbench)
+  - 📊 Power BI (Data modeling, DAX, Dashboarding)
+- **Dataset**: Simulated Bank Dataset (500+ transaction records)
+  - Tables:
+    - `customers`
+    - `accounts`
+    - `transactions`
+- **Goal**:
+  - Analyze customer and transaction behavior
+  - Track account balances and transaction types
+  - Visualize trends by branch, city, and time
+  - Identify top customers and high-value activity
+
+---
 
 ## 📌 Objectives
 - Analyze total customers, transactions, and account balances
